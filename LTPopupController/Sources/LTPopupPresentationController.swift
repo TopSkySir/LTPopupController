@@ -510,8 +510,6 @@ extension LTPopupPresentationController {
         if isAppear {
             presentingViewController.viewWillDisappear(true)
         }
-
-        print(presentedViewController.preferredContentSize)
     }
 
     open override func presentationTransitionDidEnd(_ completed: Bool) {
