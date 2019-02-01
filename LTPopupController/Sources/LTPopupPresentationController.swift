@@ -132,6 +132,37 @@ open class LTPopupPresentationController: UIPresentationController {
 
 
 
+    // MARK: - 屏幕旋转
+
+    /**
+     初始方向
+     */
+    fileprivate var initialOrientation: UIDeviceOrientation!
+
+    /**
+     初始Size
+     */
+    fileprivate var initialPreferredContentSize: CGSize!
+
+    /**
+     设置旋转Size
+     */
+    open var rotationPreferredContentSize: CGSize?
+
+    /**
+     是否跟随旋转 切换Size
+     */
+    open var isAutoRotationSize: Bool = false {
+        didSet {
+            if isAutoRotationSize {
+                registerOrientationNotifications()
+            } else {
+                removeNotifications()
+            }
+        }
+    }
+
+
     // MARK: - 其他
 
     /**
@@ -154,7 +185,6 @@ open class LTPopupPresentationController: UIPresentationController {
     open var isAppear: Bool = false
 
 
-
     // MARK: - 初始化
 
     required public init(presentedViewController: UIViewController, presentingViewController: UIViewController?, style: Style) {
@@ -164,11 +194,80 @@ open class LTPopupPresentationController: UIPresentationController {
     }
 
 
-    @objc fileprivate func dismissTap() {
-        presentingViewController.dismiss(animated: true, completion: nil)
+
+    deinit {
+        removeNotifications()
     }
 
 }
+
+
+// MARK: - 手势 & 方向
+
+fileprivate extension LTPopupPresentationController {
+
+    /**
+     手势点击事件
+     */
+    @objc func dismissTap() {
+        presentingViewController.dismiss(animated: true, completion: nil)
+    }
+
+    /**
+     注册方向通知
+     */
+    func registerOrientationNotifications() {
+        UIDevice.current.beginGeneratingDeviceOrientationNotifications()
+        NotificationCenter.default.addObserver(self, selector: #selector(receivedRotation), name: UIDevice.orientationDidChangeNotification, object: nil)
+    }
+
+    /**
+     移除通知
+     */
+    func removeNotifications() {
+        NotificationCenter.default.removeObserver(self)
+    }
+
+
+    func setOrientation() {
+        initialOrientation = UIDevice.current.orientation
+        initialPreferredContentSize = presentedViewController.preferredContentSize
+        if presentedViewController is UINavigationController {
+            initialPreferredContentSize.height -= 44
+        }
+    }
+
+
+    /**
+     方向变化
+     */
+    @objc func receivedRotation() {
+        switch UIDevice.current.orientation {
+        case .portrait, .portraitUpsideDown, .landscapeLeft, .landscapeRight:
+            checkOrientation()
+        default:
+            break
+        }
+    }
+
+    /**
+     方向检测
+     */
+    func checkOrientation() {
+        let current = UIDevice.current.orientation
+        if rotationPreferredContentSize == nil {
+            rotationPreferredContentSize = CGSize(width: initialPreferredContentSize.height, height: initialPreferredContentSize.width)
+        }
+
+        guard initialOrientation.isPortrait == current.isPortrait else {
+            presentedViewController.preferredContentSize = rotationPreferredContentSize!
+            return
+        }
+        presentedViewController.preferredContentSize = initialPreferredContentSize
+    }
+}
+
+
 
 // MARK: - 类型枚举
 
@@ -390,6 +489,11 @@ extension LTPopupPresentationController {
     open override func presentationTransitionWillBegin() {
 
         /**
+         记录方向信息
+         */
+        setOrientation()
+
+        /**
          设置自定义视图
          */
         setCustomSubviews()
@@ -406,6 +510,8 @@ extension LTPopupPresentationController {
         if isAppear {
             presentingViewController.viewWillDisappear(true)
         }
+
+        print(presentedViewController.preferredContentSize)
     }
 
     open override func presentationTransitionDidEnd(_ completed: Bool) {
@@ -629,5 +735,4 @@ extension LTPopupPresentationController: UIViewControllerTransitioningDelegate {
     public func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         return self
     }
-
 }

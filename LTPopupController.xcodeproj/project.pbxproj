@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D48876F1937EA0693E5769A /* Pods_LTPopupController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C47AE4B4195304F2C922436 /* Pods_LTPopupController.framework */; };
+		74EAB927FB7C32F0B66A95AE /* Pods_LTPopupControllerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C49BE18ACCD6E4F96CCF26C /* Pods_LTPopupControllerUITests.framework */; };
 		A6D7497B2202CA0F007A339F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D7497A2202CA0F007A339F /* AppDelegate.swift */; };
 		A6D7497D2202CA0F007A339F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D7497C2202CA0F007A339F /* ViewController.swift */; };
 		A6D749802202CA0F007A339F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D7497E2202CA0F007A339F /* Main.storyboard */; };
@@ -18,6 +20,7 @@
 		A6D749AD2202CA7C007A339F /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D749AB2202CA7C007A339F /* BaseTableViewController.swift */; };
 		A6D749B12202CF6F007A339F /* LTPopupPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D749B02202CF6F007A339F /* LTPopupPresentationController.swift */; };
 		A6D749B32202CFBD007A339F /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D749B22202CFBD007A339F /* SubViewController.swift */; };
+		D34F1DE9FBD59C5D6B0467A3 /* Pods_LTPopupControllerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609C9760CA9BFA10970BCBE8 /* Pods_LTPopupControllerTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A705A55F436800E965929E3 /* Pods-LTPopupControllerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LTPopupControllerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LTPopupControllerTests/Pods-LTPopupControllerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		59656BA4130B849E92A30F35 /* Pods-LTPopupController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LTPopupController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LTPopupController/Pods-LTPopupController.debug.xcconfig"; sourceTree = "<group>"; };
+		5C49BE18ACCD6E4F96CCF26C /* Pods_LTPopupControllerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LTPopupControllerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		609C9760CA9BFA10970BCBE8 /* Pods_LTPopupControllerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LTPopupControllerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63E10534F4C7379A82393B83 /* Pods-LTPopupController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LTPopupController.release.xcconfig"; path = "Pods/Target Support Files/Pods-LTPopupController/Pods-LTPopupController.release.xcconfig"; sourceTree = "<group>"; };
+		6C47AE4B4195304F2C922436 /* Pods_LTPopupController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LTPopupController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75DB8B18E6381FC75040CB77 /* Pods-LTPopupControllerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LTPopupControllerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LTPopupControllerTests/Pods-LTPopupControllerTests.release.xcconfig"; sourceTree = "<group>"; };
 		A6D749772202CA0F007A339F /* LTPopupController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LTPopupController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D7497A2202CA0F007A339F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6D7497C2202CA0F007A339F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +65,8 @@
 		A6D749AB2202CA7C007A339F /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		A6D749B02202CF6F007A339F /* LTPopupPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTPopupPresentationController.swift; sourceTree = "<group>"; };
 		A6D749B22202CFBD007A339F /* SubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
+		C0109DC83CB5B630EDE8E294 /* Pods-LTPopupControllerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LTPopupControllerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LTPopupControllerUITests/Pods-LTPopupControllerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FDE02755F474F65E311A3784 /* Pods-LTPopupControllerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LTPopupControllerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LTPopupControllerUITests/Pods-LTPopupControllerUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D48876F1937EA0693E5769A /* Pods_LTPopupController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D34F1DE9FBD59C5D6B0467A3 /* Pods_LTPopupControllerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,12 +90,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74EAB927FB7C32F0B66A95AE /* Pods_LTPopupControllerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19C58BCBFF33CA950E4DAAD3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				59656BA4130B849E92A30F35 /* Pods-LTPopupController.debug.xcconfig */,
+				63E10534F4C7379A82393B83 /* Pods-LTPopupController.release.xcconfig */,
+				2A705A55F436800E965929E3 /* Pods-LTPopupControllerTests.debug.xcconfig */,
+				75DB8B18E6381FC75040CB77 /* Pods-LTPopupControllerTests.release.xcconfig */,
+				C0109DC83CB5B630EDE8E294 /* Pods-LTPopupControllerUITests.debug.xcconfig */,
+				FDE02755F474F65E311A3784 /* Pods-LTPopupControllerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A6D7496E2202CA0F007A339F = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +117,8 @@
 				A6D7498E2202CA1C007A339F /* LTPopupControllerTests */,
 				A6D749992202CA1C007A339F /* LTPopupControllerUITests */,
 				A6D749782202CA0F007A339F /* Products */,
+				19C58BCBFF33CA950E4DAAD3 /* Pods */,
+				B58D5A3280042111DC27F1B2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -153,6 +183,16 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
+		B58D5A3280042111DC27F1B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C47AE4B4195304F2C922436 /* Pods_LTPopupController.framework */,
+				609C9760CA9BFA10970BCBE8 /* Pods_LTPopupControllerTests.framework */,
+				5C49BE18ACCD6E4F96CCF26C /* Pods_LTPopupControllerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -160,9 +200,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6D7499F2202CA1D007A339F /* Build configuration list for PBXNativeTarget "LTPopupController" */;
 			buildPhases = (
+				4C107FEFDC3F73481705E885 /* [CP] Check Pods Manifest.lock */,
 				A6D749732202CA0F007A339F /* Sources */,
 				A6D749742202CA0F007A339F /* Frameworks */,
 				A6D749752202CA0F007A339F /* Resources */,
+				5715D896FF14D121C559F223 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -177,6 +219,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6D749A22202CA1D007A339F /* Build configuration list for PBXNativeTarget "LTPopupControllerTests" */;
 			buildPhases = (
+				55CFD22DAEB68199DC1CFBA4 /* [CP] Check Pods Manifest.lock */,
 				A6D749872202CA1C007A339F /* Sources */,
 				A6D749882202CA1C007A339F /* Frameworks */,
 				A6D749892202CA1C007A339F /* Resources */,
@@ -195,6 +238,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6D749A52202CA1D007A339F /* Build configuration list for PBXNativeTarget "LTPopupControllerUITests" */;
 			buildPhases = (
+				D61932F6AA12249BA701C20A /* [CP] Check Pods Manifest.lock */,
 				A6D749922202CA1C007A339F /* Sources */,
 				A6D749932202CA1C007A339F /* Frameworks */,
 				A6D749942202CA1C007A339F /* Resources */,
@@ -278,6 +322,81 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4C107FEFDC3F73481705E885 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LTPopupController-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55CFD22DAEB68199DC1CFBA4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LTPopupControllerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5715D896FF14D121C559F223 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LTPopupController/Pods-LTPopupController-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LTPopupController/Pods-LTPopupController-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D61932F6AA12249BA701C20A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LTPopupControllerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A6D749732202CA0F007A339F /* Sources */ = {
@@ -462,15 +581,13 @@
 		};
 		A6D749A02202CA1D007A339F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59656BA4130B849E92A30F35 /* Pods-LTPopupController.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HLBKRB67RG;
 				INFOPLIST_FILE = LTPopupController/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.litao.LTPopupController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -480,15 +597,13 @@
 		};
 		A6D749A12202CA1D007A339F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63E10534F4C7379A82393B83 /* Pods-LTPopupController.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HLBKRB67RG;
 				INFOPLIST_FILE = LTPopupController/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.litao.LTPopupController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -498,17 +613,14 @@
 		};
 		A6D749A32202CA1D007A339F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A705A55F436800E965929E3 /* Pods-LTPopupControllerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HLBKRB67RG;
 				INFOPLIST_FILE = LTPopupControllerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.litao.LTPopupControllerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -519,17 +631,14 @@
 		};
 		A6D749A42202CA1D007A339F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75DB8B18E6381FC75040CB77 /* Pods-LTPopupControllerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HLBKRB67RG;
 				INFOPLIST_FILE = LTPopupControllerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.litao.LTPopupControllerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -540,16 +649,13 @@
 		};
 		A6D749A62202CA1D007A339F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0109DC83CB5B630EDE8E294 /* Pods-LTPopupControllerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HLBKRB67RG;
 				INFOPLIST_FILE = LTPopupControllerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.litao.LTPopupControllerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -560,16 +666,13 @@
 		};
 		A6D749A72202CA1D007A339F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDE02755F474F65E311A3784 /* Pods-LTPopupControllerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HLBKRB67RG;
 				INFOPLIST_FILE = LTPopupControllerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.litao.LTPopupControllerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;

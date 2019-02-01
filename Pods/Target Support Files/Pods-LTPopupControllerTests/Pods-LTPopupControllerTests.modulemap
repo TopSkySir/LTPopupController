@@ -1,0 +1,6 @@
+framework module Pods_LTPopupControllerTests {
+  umbrella header "Pods-LTPopupControllerTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

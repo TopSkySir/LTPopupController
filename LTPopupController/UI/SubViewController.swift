@@ -37,6 +37,10 @@ class SubViewController: BaseTableViewController {
         print("子viewDidDisappear")
     }
 
+    deinit {
+        print("子释放")
+    }
+
 
     /*
     // MARK: - Navigation
@@ -59,5 +63,23 @@ class SubViewController: BaseTableViewController {
             self?.dismiss(animated: true, completion: nil)
         }
     }
+}
 
+extension SubViewController {
+
+    override var prefersStatusBarHidden: Bool {
+        return false
+    }
+
+    override var shouldAutorotate: Bool {
+        return true
+    }
+
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return [.portrait, .portraitUpsideDown, .landscapeLeft, .landscapeRight]
+    }
+
+    override open var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation {
+        return .portrait
+    }
 }

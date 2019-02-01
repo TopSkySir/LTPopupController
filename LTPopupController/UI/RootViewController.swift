@@ -109,7 +109,7 @@ class RootViewController: BaseTableViewController {
             self?.present(navi, animated: true, completion: nil)
         }
 
-        addAction(title: "无圆角无底色测试") { [weak self] in
+        addAction(title: "无圆角无蒙板测试") { [weak self] in
             let vc = SubViewController()
             let navi = UINavigationController(rootViewController: vc)
             let popupVC = LTPopupPresentationController(presentedViewController: navi, presentingViewController: self, style: .bottom)
@@ -120,6 +120,26 @@ class RootViewController: BaseTableViewController {
             navi.transitioningDelegate = popupVC
             self?.present(navi, animated: true, completion: nil)
         }
+
+        addAction(title: "旋转测试") { [weak self] in
+            let vc = SubViewController()
+            let popupVC = LTPopupPresentationController(presentedViewController: vc, presentingViewController: self, style: .center)
+            popupVC.isAutoRotationSize = true
+            vc.preferredContentSize = CGSize(width: 200, height: 300)
+            vc.transitioningDelegate = popupVC
+            self?.present(vc, animated: true, completion: nil)
+        }
+
+        addAction(title: "旋转测试2") { [weak self] in
+            let vc = SubViewController()
+            let popupVC = LTPopupPresentationController(presentedViewController: vc, presentingViewController: self, style: .center)
+            popupVC.isAutoRotationSize = true
+            popupVC.rotationPreferredContentSize = CGSize(width: 150, height: 150)
+            vc.preferredContentSize = CGSize(width: 200, height: 300)
+            vc.transitioningDelegate = popupVC
+            self?.present(vc, animated: true, completion: nil)
+        }
+
 
     }
 
