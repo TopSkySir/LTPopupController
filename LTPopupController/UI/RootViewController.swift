@@ -42,8 +42,83 @@ class RootViewController: BaseTableViewController {
     }
 
     override func add() {
-        addAction(title: "底部测试") {
+        addAction(title: "底部测试") { [weak self] in
+            let vc = SubViewController()
+            let navi = UINavigationController(rootViewController: vc)
+            let popupVC = LTPopupPresentationController(presentedViewController: navi, presentingViewController: self, style: .bottom)
+            navi.preferredContentSize = CGSize(width: 300, height: 300)
+            navi.transitioningDelegate = popupVC
+            self?.present(navi, animated: true, completion: nil)
+        }
 
+        addAction(title: "顶部测试") { [weak self] in
+            let vc = SubViewController()
+            let navi = UINavigationController(rootViewController: vc)
+            let popupVC = LTPopupPresentationController(presentedViewController: navi, presentingViewController: self, style: .top)
+            navi.preferredContentSize = CGSize(width: 300, height: 300)
+            navi.transitioningDelegate = popupVC
+            self?.present(navi, animated: true, completion: nil)
+        }
+
+        addAction(title: "左侧测试") { [weak self] in
+            let vc = SubViewController()
+            let navi = UINavigationController(rootViewController: vc)
+            let popupVC = LTPopupPresentationController(presentedViewController: navi, presentingViewController: self, style: .left)
+            navi.preferredContentSize = CGSize(width: 300, height: 300)
+            navi.transitioningDelegate = popupVC
+            self?.present(navi, animated: true, completion: nil)
+        }
+
+        addAction(title: "右侧测试") { [weak self] in
+            let vc = SubViewController()
+            let navi = UINavigationController(rootViewController: vc)
+            let popupVC = LTPopupPresentationController(presentedViewController: navi, presentingViewController: self, style: .right)
+            navi.preferredContentSize = CGSize(width: 300, height: 300)
+            navi.transitioningDelegate = popupVC
+            self?.present(navi, animated: true, completion: nil)
+        }
+
+        addAction(title: "中心测试") { [weak self] in
+            let vc = SubViewController()
+            let navi = UINavigationController(rootViewController: vc)
+            let popupVC = LTPopupPresentationController(presentedViewController: navi, presentingViewController: self, style: .center)
+            navi.preferredContentSize = CGSize(width: 300, height: 300)
+            navi.transitioningDelegate = popupVC
+            self?.present(navi, animated: true, completion: nil)
+        }
+
+        addAction(title: "属性测试") { [weak self] in
+            let vc = SubViewController()
+            let navi = UINavigationController(rootViewController: vc)
+            let popupVC = LTPopupPresentationController(presentedViewController: navi, presentingViewController: self, style: .center)
+            popupVC.shadowRadius = 16
+            popupVC.shadowColor = UIColor.red
+            popupVC.shadowOffset = CGSize(width: -10, height: -10)
+            popupVC.shadowOpacity = 1
+            popupVC.cornerRadius = 16
+            popupVC.presentedDuration = 0.7
+            popupVC.dismissDuration = 0.7
+            popupVC.springVelocity = 1
+            popupVC.isAppear = true
+            popupVC.isTapDismiss = false
+            popupVC.dimmingColor = UIColor.green
+            popupVC.initialDimmingAlpha = 0.2
+            popupVC.finalDimmingAlpha = 1
+            navi.preferredContentSize = CGSize(width: 300, height: 300)
+            navi.transitioningDelegate = popupVC
+            self?.present(navi, animated: true, completion: nil)
+        }
+
+        addAction(title: "无圆角无底色测试") { [weak self] in
+            let vc = SubViewController()
+            let navi = UINavigationController(rootViewController: vc)
+            let popupVC = LTPopupPresentationController(presentedViewController: navi, presentingViewController: self, style: .bottom)
+            popupVC.shadowColor = UIColor.clear
+            popupVC.cornerRadius = 0
+            popupVC.dimmingColor = UIColor.clear
+            navi.preferredContentSize = CGSize(width: 300, height: 300)
+            navi.transitioningDelegate = popupVC
+            self?.present(navi, animated: true, completion: nil)
         }
 
     }
