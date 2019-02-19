@@ -1,109 +1,22 @@
-<style>
-#background {
-    height: 200px;
-    width: 100%;
-    position: relative;
-    background: -webkit-linear-gradient(left, #74ebd5, #ACB6E5);
-    background: -o-linear-gradient(right, #74ebd5, #ACB6E5);
-    background: -moz-linear-gradient(right, #74ebd5, #ACB6E5);
-    background: linear-gradient(to right, #74ebd5, #ACB6E5);
-}
-
-#title {
-    text-align: center;
-    line-height: 200px;
-    font-size: 40px;
-    font-weight: bold;
-    -webkit-text-stroke: 2px green;
-    -webkit-text-fill-color: transparent;
-    width: 100%;
-    position: absolute;
-    right: 0px;
-    bottom: 0px
-}
-
-#author {
-    height: 40px;
-    width: 100%;
-    text-align: right;
-    line-height: 40px;
-    font-size: 20px;
-    position: absolute;
-    right: 40px;
-    bottom: 0px;
-    /*-webkit-text-stroke: 1px green;*/
-    color: green;
-    -webkit-text-fill-color: transparent;
-    background-image: -webkit-linear-gradient(left, #74ebd5, #ACB6E5 25%, #74ebd5 50%, #ACB6E5 75%, #74ebd5);
-    -webkit-background-clip: text;
-    -webkit-background-size: 200% 100%;
-    -webkit-animation: masked-animation 4s infinite linear;
-    /*font-weight: bold;*/
-}
-
-@-webkit-keyframes masked-animation {
-    0% {
-        background-position: 0 0;
-    }
-
-    100% {
-        background-position: -100% 0;
-    }
-}
-
-#navi {
-    overflow: hidden;
-    background: white;
-}
-
-.item {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 20px 6px 20px 0px;
-    text-decoration: none;
-}
-
-.item div {
-    float: left;
-    display: block;
-}
-
-.left {
-    background: #333333;
-    border-radius: 4px 0px 0px 4px;
-    color: white;
-    font-size: 10px;
-    padding: 4px 6px;
-}
-
-.right {
-    background: #008000;
-    border-radius: 0px 4px 4px 0px;
-    color: white;
-    font-size: 10px;
-    padding: 4px 6px;
-}
-</style>
-
-<div id="background">
-    <div id="title">LTPopupController</div>
-    <div id="author">TopSky</div>
+<div style="height: 200px; width: 100%;     position: relative; background: -webkit-linear-gradient(left, #74ebd5, #ACB6E5); background: -o-linear-gradient(right, #74ebd5, #ACB6E5); background: -moz-linear-gradient(right, #74ebd5, #ACB6E5); background: linear-gradient(to right, #74ebd5, #ACB6E5);">
+    <div style="  text-align: center;line-height: 200px;font-size: 40px;font-weight: bold;-webkit-text-stroke: 2px green;-webkit-text-fill-color: transparent;width: 100%;position: absolute;right: 0px;bottom: 0px">LTPageViewController</div>
+    <div style=" height: 40px;width: 100%;text-align: right;line-height: 40px;font-size: 20px;position: absolute;right: 40px;bottom: 0px;color: #74ebd5;">TopSky</div>        
 </div>
 
-<div id="navi">
-    <div class="item">
-        <div class="left">pod</div>
-        <div class="right">0.0.1</div>
+<div style="overflow: hidden;background: white;">
+    <div style="float: left;display: block;color: white;text-align: center;padding: 20px 6px 20px 0px;text-decoration: none;">
+        <div style="float: left;display: block;background: #333333;border-radius: 4px 0px 0px 4px;color: white;font-size: 10px;padding: 4px 6px;">pod</div>
+        <div style="float: left;display: block;background: #008000;border-radius: 0px 4px 4px 0px;color: white;font-size: 10px;padding: 4px 6px;">0.0.1</div>        
     </div>
-    <div class="item">
-        <div class="left">platform</div>
-        <div class="right">ios</div>
+    
+     <div style="float: left;display: block;color: white;text-align: center;padding: 20px 6px 20px 0px;text-decoration: none;">
+        <div style="float: left;display: block;background: #333333;border-radius: 4px 0px 0px 4px;color: white;font-size: 10px;padding: 4px 6px;">platform</div>
+        <div style="float: left;display: block;background: #008000;border-radius: 0px 4px 4px 0px;color: white;font-size: 10px;padding: 4px 6px;">ios</div>        
     </div>
-    <div class="item">
-        <div class="left">license</div>
-        <div class="right">MIT</div>
+    
+     <div style="float: left;display: block;color: white;text-align: center;padding: 20px 6px 20px 0px;text-decoration: none;">
+        <div style="float: left;display: block;background: #333333;border-radius: 4px 0px 0px 4px;color: white;font-size: 10px;padding: 4px 6px;">license</div>
+        <div style="float: left;display: block;background: #008000;border-radius: 0px 4px 4px 0px;color: white;font-size: 10px;padding: 4px 6px;">MIT</div>        
     </div>
 </div>
 
@@ -131,13 +44,10 @@ it, simply add the following line to your Podfile:
     pod 'LTPopupController'
     ```
     
-    
-    
-      
 ## Usage
 * 示例图
-    ![A-w200](base.gif) ![B-w200](rotate.gif)           
-
+    <img src="base.gif" alt="base" style="width: 200px"> <img src="rotate.gif" alt="rotate" style="width: 200px">
+          
 * 常规用法
 
     可更改style来控制弹出图层的方向
