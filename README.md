@@ -29,7 +29,7 @@ it, simply add the following line to your Podfile:
     
 ## Usage
 * 示例图
-    <a target="_blank" rel="noopener noreferrer" href="/TopSkySir/LTPopupController/blob/master/base.gif"><img src="base.gif" alt="base" style="max-width:200px;"></a> <a target="_blank" rel="noopener noreferrer" href="/TopSkySir/LTPopupController/blob/master/base.gif"><img src="rotate.gif" alt="rotate" style="max-width:200px;"></a>
+    <img src="base.gif" alt="base" width="200"> <img src="rotate.gif" alt="rotate "width="200">
           
 * 常规用法
 
