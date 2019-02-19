@@ -29,7 +29,7 @@ it, simply add the following line to your Podfile:
     
 ## Usage
 * 示例图
-    <img src="base.gif" alt="base" width="200"> <img src="rotate.gif" alt="rotate "width="200">
+    <img src="base.gif" alt="base" width="200"/> <img src="rotate.gif" alt="rotate" width="200"/>
           
 * 常规用法
 
