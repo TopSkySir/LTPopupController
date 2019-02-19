@@ -1,23 +1,6 @@
 <div style="height: 200px; width: 100%;     position: relative; background: -webkit-linear-gradient(left, #74ebd5, #ACB6E5); background: -o-linear-gradient(right, #74ebd5, #ACB6E5); background: -moz-linear-gradient(right, #74ebd5, #ACB6E5); background: linear-gradient(to right, #74ebd5, #ACB6E5);">
-    <div style="  text-align: center;line-height: 200px;font-size: 40px;font-weight: bold;-webkit-text-stroke: 2px green;-webkit-text-fill-color: transparent;width: 100%;position: absolute;right: 0px;bottom: 0px">LTPageViewController</div>
+    <div style="text-align: center;line-height: 200px;font-size: 40px;font-weight: bold;-webkit-text-stroke: 2px green;-webkit-text-fill-color: transparent;width: 100%;position: absolute;right: 0px;bottom: 0px">LTPageViewController</div>
     <div style=" height: 40px;width: 100%;text-align: right;line-height: 40px;font-size: 20px;position: absolute;right: 40px;bottom: 0px;color: #74ebd5;">TopSky</div>        
-</div>
-
-<div style="overflow: hidden;background: white;">
-    <div style="float: left;display: block;color: white;text-align: center;padding: 20px 6px 20px 0px;text-decoration: none;">
-        <div style="float: left;display: block;background: #333333;border-radius: 4px 0px 0px 4px;color: white;font-size: 10px;padding: 4px 6px;">pod</div>
-        <div style="float: left;display: block;background: #008000;border-radius: 0px 4px 4px 0px;color: white;font-size: 10px;padding: 4px 6px;">0.0.1</div>        
-    </div>
-    
-     <div style="float: left;display: block;color: white;text-align: center;padding: 20px 6px 20px 0px;text-decoration: none;">
-        <div style="float: left;display: block;background: #333333;border-radius: 4px 0px 0px 4px;color: white;font-size: 10px;padding: 4px 6px;">platform</div>
-        <div style="float: left;display: block;background: #008000;border-radius: 0px 4px 4px 0px;color: white;font-size: 10px;padding: 4px 6px;">ios</div>        
-    </div>
-    
-     <div style="float: left;display: block;color: white;text-align: center;padding: 20px 6px 20px 0px;text-decoration: none;">
-        <div style="float: left;display: block;background: #333333;border-radius: 4px 0px 0px 4px;color: white;font-size: 10px;padding: 4px 6px;">license</div>
-        <div style="float: left;display: block;background: #008000;border-radius: 0px 4px 4px 0px;color: white;font-size: 10px;padding: 4px 6px;">MIT</div>        
-    </div>
 </div>
 
 ```
@@ -46,7 +29,7 @@ it, simply add the following line to your Podfile:
     
 ## Usage
 * 示例图
-    <img src="base.gif" alt="base" style="width=200"> <img src="rotate.gif" alt="rotate" style="width=200">
+    <a target="_blank" rel="noopener noreferrer" href="/TopSkySir/LTPopupController/blob/master/base.gif"><img src="base.gif" alt="base" style="max-width:200px;"></a> <a target="_blank" rel="noopener noreferrer" href="/TopSkySir/LTPopupController/blob/master/base.gif"><img src="rotate.gif" alt="rotate" style="max-width:200px;"></a>
           
 * 常规用法
 
