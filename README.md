@@ -1,4 +1,4 @@
-<div style="height: 200px; width: 100%;     position: relative; background: -webkit-linear-gradient(left, #74ebd5, #ACB6E5); background: -o-linear-gradient(right, #74ebd5, #ACB6E5); background: -moz-linear-gradient(right, #74ebd5, #ACB6E5); background: linear-gradient(to right, #74ebd5, #ACB6E5);">
+<div height="200" style="height: 200px; width: 100%;     position: relative; background: -webkit-linear-gradient(left, #74ebd5, #ACB6E5); background: -o-linear-gradient(right, #74ebd5, #ACB6E5); background: -moz-linear-gradient(right, #74ebd5, #ACB6E5); background: linear-gradient(to right, #74ebd5, #ACB6E5);">
     <div style="text-align: center;line-height: 200px;font-size: 40px;font-weight: bold;-webkit-text-stroke: 2px green;-webkit-text-fill-color: transparent;width: 100%;position: absolute;right: 0px;bottom: 0px">LTPageViewController</div>
     <div style=" height: 40px;width: 100%;text-align: right;line-height: 40px;font-size: 20px;position: absolute;right: 40px;bottom: 0px;color: #74ebd5;">TopSky</div>        
 </div>
@@ -29,6 +29,7 @@ it, simply add the following line to your Podfile:
     
 ## Usage
 * 示例图
+
     <img src="base.gif" alt="base" width="200"/> <img src="rotate.gif" alt="rotate" width="200"/>
           
 * 常规用法
