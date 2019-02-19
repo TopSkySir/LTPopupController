@@ -42,6 +42,11 @@ class RootViewController: BaseTableViewController {
     }
 
     override func add() {
+
+        addAction(title: "normal") { [weak self] in
+            self?.test()
+        }
+
         addAction(title: "底部测试") { [weak self] in
             let vc = SubViewController()
             let navi = UINavigationController(rootViewController: vc)
@@ -140,8 +145,16 @@ class RootViewController: BaseTableViewController {
             self?.present(vc, animated: true, completion: nil)
         }
 
-
     }
+
+    func test() {
+        let vc = SubViewController()
+        let popupVC = LTPopupPresentationController(presentedViewController: vc, presentingViewController: self, style: .bottom)
+        vc.preferredContentSize = CGSize(width: 300, height: 300)
+        vc.transitioningDelegate = popupVC
+        present(vc, animated: true, completion: nil)
+    }
+
 
 
     /*
