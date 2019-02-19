@@ -46,7 +46,7 @@ it, simply add the following line to your Podfile:
     
 ## Usage
 * 示例图
-    <img src="base.gif" alt="base" style="width: 200px"> <img src="rotate.gif" alt="rotate" style="width: 200px">
+    <img src="base.gif" alt="base" style="width=200"> <img src="rotate.gif" alt="rotate" style="width=200">
           
 * 常规用法
 
